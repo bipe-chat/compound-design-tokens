@@ -49,6 +49,11 @@ public final class CompoundUIColorTokens: Sendable {
     public let bgSuccessPressed = CompoundCoreUIColorTokens.green1100
     public let bgSuccessRest = CompoundCoreUIColorTokens.green900
     public let bgSuccessSubtle = CompoundCoreUIColorTokens.green200
+    public let bgTrustCautionSubtle = CompoundCoreUIColorTokens.yellow200
+    public let bgTrustDangerSubtle = CompoundCoreUIColorTokens.red200
+    public let bgTrustNeutralSubtle = CompoundCoreUIColorTokens.gray200
+    public let bgTrustVerifiedSolid = CompoundCoreUIColorTokens.acai1100
+    public let bgTrustVerifiedSubtle = CompoundCoreUIColorTokens.acai200
     public let borderAccentPrimary = CompoundCoreUIColorTokens.acai1100
     public let borderAccentSubtle = CompoundCoreUIColorTokens.acai700
     public let borderCriticalHovered = CompoundCoreUIColorTokens.red1000
@@ -63,6 +68,10 @@ public final class CompoundUIColorTokens: Sendable {
     public let borderInteractiveSecondary = CompoundCoreUIColorTokens.gray600
     public let borderSuccessPrimary = CompoundCoreUIColorTokens.green900
     public let borderSuccessSubtle = CompoundCoreUIColorTokens.green500
+    public let borderTrustCaution = CompoundCoreUIColorTokens.yellow900
+    public let borderTrustDanger = CompoundCoreUIColorTokens.red900
+    public let borderTrustNeutral = CompoundCoreUIColorTokens.gray800
+    public let borderTrustVerified = CompoundCoreUIColorTokens.acai1100
     public let gradientActionStop1 = UIColor(named: "gradientActionStop1", in: Bundle.module, compatibleWith: nil)!
     public let gradientActionStop2 = UIColor(named: "gradientActionStop2", in: Bundle.module, compatibleWith: nil)!
     public let gradientActionStop3 = UIColor(named: "gradientActionStop3", in: Bundle.module, compatibleWith: nil)!
@@ -92,6 +101,10 @@ public final class CompoundUIColorTokens: Sendable {
     public let iconSuccessPrimary = CompoundCoreUIColorTokens.green900
     public let iconTertiary = CompoundCoreUIColorTokens.gray800
     public let iconTertiaryAlpha = CompoundCoreUIColorTokens.alphaGray800
+    public let iconTrustCaution = CompoundCoreUIColorTokens.yellow1100
+    public let iconTrustDanger = CompoundCoreUIColorTokens.red1100
+    public let iconTrustNeutral = CompoundCoreUIColorTokens.gray1100
+    public let iconTrustVerified = CompoundCoreUIColorTokens.acai1100
     public let iconWarningPrimary = CompoundCoreUIColorTokens.orange900
     public let separatorPrimary = CompoundCoreUIColorTokens.gray400
     public let separatorSecondary = CompoundCoreUIColorTokens.gray300
@@ -114,6 +127,10 @@ public final class CompoundUIColorTokens: Sendable {
     public let textPrimary = CompoundCoreUIColorTokens.gray1400
     public let textSecondary = CompoundCoreUIColorTokens.gray900
     public let textSuccessPrimary = CompoundCoreUIColorTokens.green900
+    public let textTrustCaution = CompoundCoreUIColorTokens.yellow1100
+    public let textTrustDanger = CompoundCoreUIColorTokens.red1100
+    public let textTrustNeutral = CompoundCoreUIColorTokens.gray1100
+    public let textTrustVerified = CompoundCoreUIColorTokens.acai1100
     public let textWarningPrimary = CompoundCoreUIColorTokens.orange900
     public init() { }
 }

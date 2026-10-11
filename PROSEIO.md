@@ -9,6 +9,11 @@ Fork of element-hq/compound-design-tokens (AGPL-3.0) at `v11.3.1`. It re-themes 
    - Shifted: `text.action.accent`, `text.badge.accent`, `bg.accent.rest|hovered|pressed`, `border.accent.primary`, `icon.accent.primary|tertiary`, `gradient.action.*` (send and super buttons).
    - Same step: `bg.accent.subtle`, `bg.badge.accent`, `border.accent.subtle`, `bg.accent.selected` and `gradient.subtle.*` (alpha).
 3. **`success.*` stays green.** Verified states use açaí, not green.
+4. **Trust semantic tokens** (`color.{text,icon,border}.trust.{verified,caution,danger,neutral}`, `color.bg.trust.verified.{solid,subtle}`, `color.bg.trust.{caution,danger,neutral}.subtle`) in `theme-semantics.json`. Text and icons use step 1100 of `acai`, `yellow` (amber), `red` and `gray`: 8.0:1 on the default background and 7.4:1 or more on the `.subtle` card backgrounds (AAA) in light and dark, and 10:1 or more in high contrast. Caution uses `yellow`, not `orange`: Compound's orange 900 and red 900 have the same luminance and the same hue family. See proseio/docs/design/trust-ui.md.
+
+## Single source for colour values
+
+This fork is the only source of açaí values. Docs, the iOS `accent-color.colorset` and other consumers reference fork steps (brand plum = `acai.1100`: `#80307B` light, `#D993D2` dark). They do not keep a second ramp.
 
 ## Build
 

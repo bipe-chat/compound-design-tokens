@@ -118,6 +118,28 @@
           "type": "color",
           "description": "Warning text"
         }
+      },
+      "trust": {
+        "verified": {
+          "value": "{color.acai.1100}",
+          "type": "color",
+          "description": "Proseio trust UI. Verified states (seal, verified name). AAA."
+        },
+        "caution": {
+          "value": "{color.yellow.1100}",
+          "type": "color",
+          "description": "Proseio trust UI. Caution (amber) text. AAA."
+        },
+        "danger": {
+          "value": "{color.red.1100}",
+          "type": "color",
+          "description": "Proseio trust UI. Confirmed danger text. AAA."
+        },
+        "neutral": {
+          "value": "{color.gray.1100}",
+          "type": "color",
+          "description": "Proseio trust UI. Information text (unverified, external). AAA."
+        }
       }
     },
     "bg": {
@@ -341,6 +363,41 @@
           "value": "{color.red.300}",
           "type": "color"
         }
+      },
+      "trust": {
+        "verified": {
+          "solid": {
+            "value": "{color.acai.1100}",
+            "type": "color",
+            "description": "Proseio trust UI. Solid fill: institution seal, institutional header band."
+          },
+          "subtle": {
+            "value": "{color.acai.200}",
+            "type": "color",
+            "description": "Proseio trust UI. Subtle background for verified and Proseio cards."
+          }
+        },
+        "caution": {
+          "subtle": {
+            "value": "{color.yellow.200}",
+            "type": "color",
+            "description": "Proseio trust UI. Amber card background."
+          }
+        },
+        "danger": {
+          "subtle": {
+            "value": "{color.red.200}",
+            "type": "color",
+            "description": "Proseio trust UI. Danger card background."
+          }
+        },
+        "neutral": {
+          "subtle": {
+            "value": "{color.gray.200}",
+            "type": "color",
+            "description": "Proseio trust UI. Information card background."
+          }
+        }
       }
     },
     "border": {
@@ -422,6 +479,28 @@
           "value": "{color.acai.1100}",
           "type": "color",
           "description": "Accent borders for containers"
+        }
+      },
+      "trust": {
+        "verified": {
+          "value": "{color.acai.1100}",
+          "type": "color",
+          "description": "Proseio trust UI. Verified card and Pix request card border."
+        },
+        "caution": {
+          "value": "{color.yellow.900}",
+          "type": "color",
+          "description": "Proseio trust UI. Amber card border."
+        },
+        "danger": {
+          "value": "{color.red.900}",
+          "type": "color",
+          "description": "Proseio trust UI. Danger card border."
+        },
+        "neutral": {
+          "value": "{color.gray.800}",
+          "type": "color",
+          "description": "Proseio trust UI. Information card border."
         }
       }
     },
@@ -516,6 +595,28 @@
           "value": "{color.orange.900}",
           "type": "color",
           "description": "Warning icon"
+        }
+      },
+      "trust": {
+        "verified": {
+          "value": "{color.acai.1100}",
+          "type": "color",
+          "description": "Proseio trust UI. Seal and verified glyphs."
+        },
+        "caution": {
+          "value": "{color.yellow.1100}",
+          "type": "color",
+          "description": "Proseio trust UI. Amber glyphs."
+        },
+        "danger": {
+          "value": "{color.red.1100}",
+          "type": "color",
+          "description": "Proseio trust UI. Danger glyphs."
+        },
+        "neutral": {
+          "value": "{color.gray.1100}",
+          "type": "color",
+          "description": "Proseio trust UI. Information glyphs."
         }
       }
     },

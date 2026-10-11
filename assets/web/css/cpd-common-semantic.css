@@ -19,6 +19,10 @@
   --cpd-color-text-badge-accent: var(--cpd-color-acai-1300);
   --cpd-color-text-badge-info: var(--cpd-color-blue-1100);
   --cpd-color-text-warning-primary: var(--cpd-color-orange-900);
+  --cpd-color-text-trust-verified: var(--cpd-color-acai-1100);
+  --cpd-color-text-trust-caution: var(--cpd-color-yellow-1100);
+  --cpd-color-text-trust-danger: var(--cpd-color-red-1100);
+  --cpd-color-text-trust-neutral: var(--cpd-color-gray-1100);
   --cpd-color-bg-subtle-primary: var(--cpd-color-gray-400);
   --cpd-color-bg-subtle-secondary: var(--cpd-color-gray-300);
   --cpd-color-bg-subtle-tertiary: var(--cpd-color-gray-100);
@@ -60,6 +64,11 @@
   --cpd-color-bg-badge-primary: var(--cpd-color-gray-1400);
   --cpd-color-bg-badge-secondary: var(--cpd-color-gray-400);
   --cpd-color-bg-badge-critical: var(--cpd-color-red-300);
+  --cpd-color-bg-trust-verified-solid: var(--cpd-color-acai-1100);
+  --cpd-color-bg-trust-verified-subtle: var(--cpd-color-acai-200);
+  --cpd-color-bg-trust-caution-subtle: var(--cpd-color-yellow-200);
+  --cpd-color-bg-trust-danger-subtle: var(--cpd-color-red-200);
+  --cpd-color-bg-trust-neutral-subtle: var(--cpd-color-gray-200);
   --cpd-color-border-disabled: var(--cpd-color-gray-500);
   --cpd-color-border-focused: var(--cpd-color-blue-900);
   --cpd-color-border-interactive-primary: var(--cpd-color-gray-800);
@@ -74,6 +83,10 @@
   --cpd-color-border-info-subtle: var(--cpd-color-blue-700);
   --cpd-color-border-accent-subtle: var(--cpd-color-acai-700);
   --cpd-color-border-accent-primary: var(--cpd-color-acai-1100);
+  --cpd-color-border-trust-verified: var(--cpd-color-acai-1100);
+  --cpd-color-border-trust-caution: var(--cpd-color-yellow-900);
+  --cpd-color-border-trust-danger: var(--cpd-color-red-900);
+  --cpd-color-border-trust-neutral: var(--cpd-color-gray-800);
   --cpd-color-icon-primary: var(--cpd-color-gray-1400);
   --cpd-color-icon-secondary: var(--cpd-color-gray-900);
   --cpd-color-icon-tertiary: var(--cpd-color-gray-800);
@@ -90,6 +103,10 @@
   --cpd-color-icon-info-primary: var(--cpd-color-blue-1100);
   --cpd-color-icon-on-solid-primary: var(--cpd-color-theme-bg);
   --cpd-color-icon-warning-primary: var(--cpd-color-orange-900);
+  --cpd-color-icon-trust-verified: var(--cpd-color-acai-1100);
+  --cpd-color-icon-trust-caution: var(--cpd-color-yellow-1100);
+  --cpd-color-icon-trust-danger: var(--cpd-color-red-1100);
+  --cpd-color-icon-trust-neutral: var(--cpd-color-gray-1100);
   --cpd-color-gradient-subtle-stop1: var(--cpd-color-alpha-acai-500);
   --cpd-color-gradient-subtle-stop2: var(--cpd-color-alpha-acai-400);
   --cpd-color-gradient-subtle-stop3: var(--cpd-color-alpha-acai-300);
