@@ -6,11 +6,11 @@
 import SwiftUI
 
 public final class CompoundColorTokens: Sendable {
-    public let bgAccentHovered = CompoundCoreColorTokens.green1000
-    public let bgAccentPressed = CompoundCoreColorTokens.green1100
-    public let bgAccentRest = CompoundCoreColorTokens.green900
-    public let bgAccentSelected = CompoundCoreColorTokens.alphaGreen300
-    public let bgAccentSubtle = CompoundCoreColorTokens.green200
+    public let bgAccentHovered = CompoundCoreColorTokens.acai1200
+    public let bgAccentPressed = CompoundCoreColorTokens.acai1300
+    public let bgAccentRest = CompoundCoreColorTokens.acai1100
+    public let bgAccentSelected = CompoundCoreColorTokens.alphaAcai300
+    public let bgAccentSubtle = CompoundCoreColorTokens.acai200
     public let bgActionPrimaryDisabled = CompoundCoreColorTokens.gray700
     public let bgActionPrimaryHovered = CompoundCoreColorTokens.gray1200
     public let bgActionPrimaryPressed = CompoundCoreColorTokens.gray1100
@@ -21,7 +21,7 @@ public final class CompoundColorTokens: Sendable {
     public let bgActionTertiaryHovered = CompoundCoreColorTokens.gray300
     public let bgActionTertiaryRest = CompoundCoreColorTokens.themeBg
     public let bgActionTertiarySelected = CompoundCoreColorTokens.gray400
-    public let bgBadgeAccent = CompoundCoreColorTokens.green400
+    public let bgBadgeAccent = CompoundCoreColorTokens.acai400
     public let bgBadgeCritical = CompoundCoreColorTokens.red300
     public let bgBadgeDefault = CompoundCoreColorTokens.themeBg
     public let bgBadgeInfo = CompoundCoreColorTokens.blue400
@@ -49,8 +49,8 @@ public final class CompoundColorTokens: Sendable {
     public let bgSuccessPressed = CompoundCoreColorTokens.green1100
     public let bgSuccessRest = CompoundCoreColorTokens.green900
     public let bgSuccessSubtle = CompoundCoreColorTokens.green200
-    public let borderAccentPrimary = CompoundCoreColorTokens.green900
-    public let borderAccentSubtle = CompoundCoreColorTokens.green700
+    public let borderAccentPrimary = CompoundCoreColorTokens.acai1100
+    public let borderAccentSubtle = CompoundCoreColorTokens.acai700
     public let borderCriticalHovered = CompoundCoreColorTokens.red1000
     public let borderCriticalPrimary = CompoundCoreColorTokens.red900
     public let borderCriticalSubtle = CompoundCoreColorTokens.red500
@@ -71,14 +71,14 @@ public final class CompoundColorTokens: Sendable {
     public let gradientCriticalStop2 = CompoundCoreColorTokens.themeBg
     public let gradientInfoStop1 = CompoundCoreColorTokens.blue200
     public let gradientInfoStop2 = CompoundCoreColorTokens.themeBg
-    public let gradientSubtleStop1 = CompoundCoreColorTokens.alphaGreen500
-    public let gradientSubtleStop2 = CompoundCoreColorTokens.alphaGreen400
-    public let gradientSubtleStop3 = CompoundCoreColorTokens.alphaGreen300
-    public let gradientSubtleStop4 = CompoundCoreColorTokens.alphaGreen200
-    public let gradientSubtleStop5 = CompoundCoreColorTokens.alphaGreen100
+    public let gradientSubtleStop1 = CompoundCoreColorTokens.alphaAcai500
+    public let gradientSubtleStop2 = CompoundCoreColorTokens.alphaAcai400
+    public let gradientSubtleStop3 = CompoundCoreColorTokens.alphaAcai300
+    public let gradientSubtleStop4 = CompoundCoreColorTokens.alphaAcai200
+    public let gradientSubtleStop5 = CompoundCoreColorTokens.alphaAcai100
     public let gradientSubtleStop6 = CompoundCoreColorTokens.transparent
-    public let iconAccentPrimary = CompoundCoreColorTokens.green900
-    public let iconAccentTertiary = CompoundCoreColorTokens.green800
+    public let iconAccentPrimary = CompoundCoreColorTokens.acai1100
+    public let iconAccentTertiary = CompoundCoreColorTokens.acai1000
     public let iconCriticalPrimary = CompoundCoreColorTokens.red900
     public let iconDisabled = CompoundCoreColorTokens.gray700
     public let iconInfoPrimary = CompoundCoreColorTokens.blue1100
@@ -95,10 +95,10 @@ public final class CompoundColorTokens: Sendable {
     public let iconWarningPrimary = CompoundCoreColorTokens.orange900
     public let separatorPrimary = CompoundCoreColorTokens.gray400
     public let separatorSecondary = CompoundCoreColorTokens.gray300
-    public let textActionAccent = CompoundCoreColorTokens.green900
+    public let textActionAccent = CompoundCoreColorTokens.acai1100
     public let textActionPrimary = CompoundCoreColorTokens.gray1400
     public let textActionSuccess = CompoundCoreColorTokens.green900
-    public let textBadgeAccent = CompoundCoreColorTokens.green1100
+    public let textBadgeAccent = CompoundCoreColorTokens.acai1300
     public let textBadgeInfo = CompoundCoreColorTokens.blue1100
     public let textCriticalPrimary = CompoundCoreColorTokens.red900
     public let textDecorative1 = CompoundCoreColorTokens.lime1100

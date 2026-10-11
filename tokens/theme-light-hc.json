@@ -655,6 +655,78 @@
         "description": "WCAG: 17"
       }
     },
+    "acai": {
+      "100": {
+        "value": "#fff5ff",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#faeff9",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#f5e0f2",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#f2d3ee",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#e8b3e2",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#db96d4",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#c471bd",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#a952a3",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#772a73",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#6c2468",
+        "type": "color",
+        "description": "WCAG: 10.00"
+      },
+      "1100": {
+        "value": "#5d1d59",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#50194d",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#391237",
+        "type": "color",
+        "description": "WCAG: 16.00"
+      },
+      "1400": {
+        "value": "#30102e",
+        "type": "color",
+        "description": "WCAG: 17.00"
+      }
+    },
     "fuchsia": {
       "100": {
         "value": "#fcf5fd",
@@ -1446,6 +1518,78 @@
           "value": "hsl(259, 100%, 19%, 1)",
           "type": "color",
           "description": "WCAG: 17 Opacity: 1"
+        }
+      },
+      "acai": {
+        "100": {
+          "value": "rgba(127, 47, 123, 0.06)",
+          "type": "color",
+          "description": "Opacity: 0.06 (açaí base, same opacity as green)"
+        },
+        "200": {
+          "value": "rgba(127, 47, 123, 0.11)",
+          "type": "color",
+          "description": "Opacity: 0.11 (açaí base, same opacity as green)"
+        },
+        "300": {
+          "value": "rgba(127, 47, 123, 0.23)",
+          "type": "color",
+          "description": "Opacity: 0.23 (açaí base, same opacity as green)"
+        },
+        "400": {
+          "value": "rgba(127, 47, 123, 0.32)",
+          "type": "color",
+          "description": "Opacity: 0.32 (açaí base, same opacity as green)"
+        },
+        "500": {
+          "value": "rgba(127, 47, 123, 0.56)",
+          "type": "color",
+          "description": "Opacity: 0.56 (açaí base, same opacity as green)"
+        },
+        "600": {
+          "value": "rgba(127, 47, 123, 0.96)",
+          "type": "color",
+          "description": "Opacity: 0.96 (açaí base, same opacity as green)"
+        },
+        "700": {
+          "value": "#c471bd",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 1"
+        },
+        "800": {
+          "value": "#a952a3",
+          "type": "color",
+          "description": "WCAG: 4.75 Opacity: 1"
+        },
+        "900": {
+          "value": "#772a73",
+          "type": "color",
+          "description": "WCAG: 8.87 Opacity: 1"
+        },
+        "1000": {
+          "value": "#6c2468",
+          "type": "color",
+          "description": "WCAG: 10.00 Opacity: 1"
+        },
+        "1100": {
+          "value": "#5d1d59",
+          "type": "color",
+          "description": "WCAG: 11.75 Opacity: 1"
+        },
+        "1200": {
+          "value": "#50194d",
+          "type": "color",
+          "description": "WCAG: 13.25 Opacity: 1"
+        },
+        "1300": {
+          "value": "#391237",
+          "type": "color",
+          "description": "WCAG: 16.00 Opacity: 1"
+        },
+        "1400": {
+          "value": "#30102e",
+          "type": "color",
+          "description": "WCAG: 17.00 Opacity: 1"
         }
       },
       "fuchsia": {

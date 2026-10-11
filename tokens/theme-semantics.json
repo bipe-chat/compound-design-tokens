@@ -23,7 +23,7 @@
           "description": "Default text colour for plain actions."
         },
         "accent": {
-          "value": "{color.green.900}",
+          "value": "{color.acai.1100}",
           "type": "color",
           "description": "Accent text colour for plain actions."
         },
@@ -102,7 +102,7 @@
       },
       "badge": {
         "accent": {
-          "value": "{color.green.1100}",
+          "value": "{color.acai.1300}",
           "type": "color",
           "description": "Badge accent text colour"
         },
@@ -291,34 +291,34 @@
       },
       "accent": {
         "rest": {
-          "value": "{color.green.900}",
+          "value": "{color.acai.1100}",
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Rest."
         },
         "hovered": {
-          "value": "{color.green.1000}",
+          "value": "{color.acai.1200}",
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Hover"
         },
         "pressed": {
-          "value": "{color.green.1100}",
+          "value": "{color.acai.1300}",
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Pressed"
         },
         "selected": {
-          "value": "{color.alpha.green.300}",
+          "value": "{color.alpha.acai.300}",
           "type": "color",
           "description": "Background colour for accent or brand actions. State: Selected"
         },
         "subtle": {
-          "value": "{color.green.200}",
+          "value": "{color.acai.200}",
           "type": "color",
           "description": "Accent colour, subtle shade for Text buttons Hover/press"
         }
       },
       "badge": {
         "accent": {
-          "value": "{color.green.400}",
+          "value": "{color.acai.400}",
           "type": "color"
         },
         "info": {
@@ -414,12 +414,12 @@
       },
       "accent": {
         "subtle": {
-          "value": "{color.green.700}",
+          "value": "{color.acai.700}",
           "type": "color",
           "description": "accent border intended for keylines on message highlights"
         },
         "primary": {
-          "value": "{color.green.900}",
+          "value": "{color.acai.1100}",
           "type": "color",
           "description": "Accent borders for containers"
         }
@@ -473,12 +473,12 @@
       },
       "accent": {
         "tertiary": {
-          "value": "{color.green.800}",
+          "value": "{color.acai.1000}",
           "type": "color",
           "description": "Lowest contrast accessible accent icons."
         },
         "primary": {
-          "value": "{color.green.900}",
+          "value": "{color.acai.1100}",
           "type": "color",
           "description": "Highest contrast accessible accent icons."
         }
@@ -522,27 +522,27 @@
     "gradient": {
       "subtle": {
         "stop1": {
-          "value": "{color.alpha.green.500}",
+          "value": "{color.alpha.acai.500}",
           "type": "color",
           "description": "Subtle background gradient stop for message highlight and bloom"
         },
         "stop2": {
-          "value": "{color.alpha.green.400}",
+          "value": "{color.alpha.acai.400}",
           "type": "color",
           "description": "Subtle background gradient stop for message highlight and bloom"
         },
         "stop3": {
-          "value": "{color.alpha.green.300}",
+          "value": "{color.alpha.acai.300}",
           "type": "color",
           "description": "Subtle background gradient stop for message highlight and bloom"
         },
         "stop4": {
-          "value": "{color.alpha.green.200}",
+          "value": "{color.alpha.acai.200}",
           "type": "color",
           "description": "Subtle background gradient stop for message highlight and bloom"
         },
         "stop5": {
-          "value": "{color.alpha.green.100}",
+          "value": "{color.alpha.acai.100}",
           "type": "color",
           "description": "Subtle background gradient stop for message highlight and bloom"
         },

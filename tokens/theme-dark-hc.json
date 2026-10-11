@@ -655,6 +655,78 @@
         "description": "WCAG: 17"
       }
     },
+    "acai": {
+      "100": {
+        "value": "#2a0e28",
+        "type": "color",
+        "description": "WCAG: 1.06"
+      },
+      "200": {
+        "value": "#331031",
+        "type": "color",
+        "description": "WCAG: 1.12"
+      },
+      "300": {
+        "value": "#421440",
+        "type": "color",
+        "description": "WCAG: 1.25"
+      },
+      "400": {
+        "value": "#4d184a",
+        "type": "color",
+        "description": "WCAG: 1.37"
+      },
+      "500": {
+        "value": "#662263",
+        "type": "color",
+        "description": "WCAG: 1.75"
+      },
+      "600": {
+        "value": "#7d2e79",
+        "type": "color",
+        "description": "WCAG: 2.25"
+      },
+      "700": {
+        "value": "#9b4496",
+        "type": "color",
+        "description": "WCAG: 3.25"
+      },
+      "800": {
+        "value": "#b761b1",
+        "type": "color",
+        "description": "WCAG: 4.75"
+      },
+      "900": {
+        "value": "#df9ed8",
+        "type": "color",
+        "description": "WCAG: 8.87"
+      },
+      "1000": {
+        "value": "#e5acdf",
+        "type": "color",
+        "description": "WCAG: 10.00"
+      },
+      "1100": {
+        "value": "#ecc0e7",
+        "type": "color",
+        "description": "WCAG: 11.75"
+      },
+      "1200": {
+        "value": "#f1cfed",
+        "type": "color",
+        "description": "WCAG: 13.25"
+      },
+      "1300": {
+        "value": "#f7eaf5",
+        "type": "color",
+        "description": "WCAG: 16.00"
+      },
+      "1400": {
+        "value": "#fdf1fb",
+        "type": "color",
+        "description": "WCAG: 17.00"
+      }
+    },
     "fuchsia": {
       "100": {
         "value": "#2e0044",
@@ -1446,6 +1518,78 @@
           "value": "hsl(250, 100%, 98%, 1)",
           "type": "color",
           "description": "WCAG: 17 Opacity: 1"
+        }
+      },
+      "acai": {
+        "100": {
+          "value": "#2a0e28",
+          "type": "color",
+          "description": "WCAG: 1.06 Opacity: 1"
+        },
+        "200": {
+          "value": "#331031",
+          "type": "color",
+          "description": "WCAG: 1.12 Opacity: 1"
+        },
+        "300": {
+          "value": "#421440",
+          "type": "color",
+          "description": "WCAG: 1.25 Opacity: 1"
+        },
+        "400": {
+          "value": "#4d184a",
+          "type": "color",
+          "description": "WCAG: 1.37 Opacity: 1"
+        },
+        "500": {
+          "value": "#662263",
+          "type": "color",
+          "description": "WCAG: 1.75 Opacity: 1"
+        },
+        "600": {
+          "value": "#7d2e79",
+          "type": "color",
+          "description": "WCAG: 2.25 Opacity: 1"
+        },
+        "700": {
+          "value": "#9b4496",
+          "type": "color",
+          "description": "WCAG: 3.25 Opacity: 1"
+        },
+        "800": {
+          "value": "rgba(127, 47, 123, 0.54)",
+          "type": "color",
+          "description": "Opacity: 0.54 (açaí base, same opacity as green)"
+        },
+        "900": {
+          "value": "rgba(127, 47, 123, 0.78)",
+          "type": "color",
+          "description": "Opacity: 0.78 (açaí base, same opacity as green)"
+        },
+        "1000": {
+          "value": "rgba(127, 47, 123, 0.81)",
+          "type": "color",
+          "description": "Opacity: 0.81 (açaí base, same opacity as green)"
+        },
+        "1100": {
+          "value": "rgba(127, 47, 123, 0.86)",
+          "type": "color",
+          "description": "Opacity: 0.86 (açaí base, same opacity as green)"
+        },
+        "1200": {
+          "value": "rgba(127, 47, 123, 0.9)",
+          "type": "color",
+          "description": "Opacity: 0.9 (açaí base, same opacity as green)"
+        },
+        "1300": {
+          "value": "rgba(127, 47, 123, 0.96)",
+          "type": "color",
+          "description": "Opacity: 0.96 (açaí base, same opacity as green)"
+        },
+        "1400": {
+          "value": "rgba(127, 47, 123, 0.98)",
+          "type": "color",
+          "description": "Opacity: 0.98 (açaí base, same opacity as green)"
         }
       },
       "fuchsia": {
