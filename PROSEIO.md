@@ -31,3 +31,8 @@ Regenerate the ramp after an upstream update: `git checkout upstream/main -- tok
 
 - proseio-ios `compound-ios/Package.swift` points at this repo by local path (`../../proseio-tokens`), because the repo is private until launch.
 - Android: not yet.
+
+## Traps
+
+- Never run `pnpm` here: upstream pins pnpm 12 in `packageManager` and pnpm auto-downloads it, even with `manage-package-manager-versions=false` on some commands.
+- The GitHub repo must stay named `compound-design-tokens`: SwiftPM names a mirrored package after the mirror repo, and Element packages reference `compound-design-tokens`.
