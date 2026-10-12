@@ -1,3 +1,5 @@
+> **Proseio fork.** This is [Proseio](https://proseio.com.br)'s fork of Element's Compound design tokens, a Brazilian messenger built on Matrix. Fork rules: [PROSEIO.md](PROSEIO.md). Contributing: [Proseio guide](https://github.com/proseio/.github/blob/main/CONTRIBUTING.md) (DCO sign-off). Security: [SECURITY.md](https://github.com/proseio/.github/blob/main/SECURITY.md). The Proseio name and logo are not covered by the licence: [TRADEMARKS.md](https://github.com/proseio/.github/blob/main/TRADEMARKS.md). Everything below this note is Element's original README.
+
 <p align="center"><img src="https://compound.element.io/logo-readme.png" width="300" alt="" /></p>
 
 # Compound design tokens
