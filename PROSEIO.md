@@ -1,6 +1,6 @@
 # Proseio tokens fork
 
-Fork of element-hq/compound-design-tokens (AGPL-3.0) at `v11.3.1`. It re-themes Compound for Proseio on iOS, Android and web.
+Fork of element-hq/compound-design-tokens (AGPL-3.0) at `v11.3.1`. It re-themes Compound for Bipe (code name Proseio, ADR 0054) on iOS, Android and web.
 
 ## Changes from upstream
 
