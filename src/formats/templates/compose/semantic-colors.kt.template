@@ -5,6 +5,16 @@ package <%= options.packageName %>
 <%= options.import.map(function(item) {
     return 'import ' + item
   }).join('\n')
+%><%
+  let INDENT_LEVEL = options.indentLevel;
+  let INDENT_2_LEVELS = INDENT_LEVEL + INDENT_LEVEL;
+  function formatColor(prop) {
+    let result = formatProperty(prop)
+    result = result
+      .replace("= ", "= " + options.tokenClassName + ".")
+      .replace("color", "")
+    return result[0].toLowerCase() + result.slice(1);
+  }
 %>
 
 /**
@@ -12,12 +22,13 @@ package <%= options.packageName %>
  */
 @OptIn(CoreColorToken::class)
 val <%= options.valName %> = SemanticColors(
-    <%= allTokens.map(function(prop) {
-      let result = formatProperty(prop)
-      result = result
-        .replace("= ", "= " + options.tokenClassName + ".")
-        .replace("color", "")
-      return result[0].toLowerCase() + result.slice(1);
-    }).sort().join(',\n' + options.indentLevel ) %>,
+<%= options.getSemanticColorGroups(allTokens).map(function(group) {
+    return INDENT_LEVEL + group.name + ' = ' + group.className + '(\n' +
+      group.tokens.map(function(prop) {
+        return INDENT_2_LEVELS + formatColor(prop) + ','
+      }).join('\n') + '\n' +
+      INDENT_LEVEL + '),'
+  }).join('\n')
+%>
     isLight = <%= options.isLight %>,
 )

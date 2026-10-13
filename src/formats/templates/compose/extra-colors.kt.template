@@ -6,24 +6,59 @@ import androidx.compose.ui.graphics.Color
 <%= options.import.map(function(item) {
     return 'import ' + item
   }).join('\n') %><%
-  let colors = allTokens.map(function(prop) {
-    return { name: options.fixColorName(prop.name), description: prop.description };
+  // Bipe: one holder class for each token group keeps every JVM signature under 255 slots.
+  // See getSemanticColorGroups in src/configs/getAndroidConfig.ts.
+  let groups = options.getSemanticColorGroups(allTokens).map(function(group) {
+    return {
+      name: group.name,
+      className: group.className,
+      colors: group.tokens.map(function(prop) {
+        return { name: options.fixColorName(prop.name), description: prop.description };
+      }),
+    };
   });
   let INDENT_LEVEL = options.indentLevel;
   let INDENT_2_LEVELS = INDENT_LEVEL + INDENT_LEVEL;
+  function comment(color, indent) {
+    if (!color.description) return "";
+    return indent + `/** ${color.description.replace(/\n/g, " ")} */\n`;
+  }
 %>
 /**
  * This class holds all the semantic tokens of the Compound theme.
+ *
+ * The colours are in one holder class for each token group, because one constructor with all the colours
+ * is larger than the JVM limit of 255 argument slots. Read a colour with its property, for example
+ * `colors.textPrimary`. To change colours, copy the group, for example
+ * `colors.copy(bg = colors.bg.copy(bgCanvasDefault = Color.Black))`.
  */
+@Immutable
 data class <%= options.className %>(
-<%= colors.map(function(color) {
-    let comment = "";
-    if (color.description) {
-      comment = INDENT_LEVEL + `/** ${color.description.replace("\n", " ")} */\n`
-    }
-    return comment + INDENT_LEVEL + 'val ' + color.name + ': Color,'
+<%= groups.map(function(group) {
+    return INDENT_LEVEL + 'val ' + group.name + ': ' + group.className + ','
   }).join('\n')
 %>
     /** True for light theme, false for dark theme. */
     val isLight: Boolean,
+) {
+<%= groups.map(function(group) {
+    return group.colors.map(function(color) {
+      return comment(color, INDENT_LEVEL) + INDENT_LEVEL + 'val ' + color.name + ': Color get() = ' + group.name + '.' + color.name
+    }).join('\n')
+  }).join('\n\n')
+%>
+}
+<%= groups.map(function(group) {
+    return `
+/**
+ * The \`${group.name}\` semantic tokens of the Compound theme. See [${options.className}].
+ */
+@Immutable
+data class ${group.className}(
+` + group.colors.map(function(color) {
+      return comment(color, INDENT_LEVEL) + INDENT_LEVEL + 'val ' + color.name + ': Color,'
+    }).join('\n') + `
 )
+`
+  }).join('')
+%>

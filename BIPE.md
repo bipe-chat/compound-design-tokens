@@ -10,6 +10,7 @@ Fork of element-hq/compound-design-tokens (AGPL-3.0) at `v11.3.1`. It re-themes 
    - Same step: `bg.accent.subtle`, `bg.badge.accent`, `border.accent.subtle`, `bg.accent.selected` and `gradient.subtle.*` (alpha).
 3. **`success.*` stays green.** Verified states use açaí, not green.
 4. **Trust semantic tokens** (`color.{text,icon,border}.trust.{verified,caution,danger,neutral}`, `color.bg.trust.verified.{solid,subtle}`, `color.bg.trust.{caution,danger,neutral}.subtle`) in `theme-semantics.json`. Text and icons use step 1100 of `acai`, `yellow` (amber), `red` and `gray`: 8.0:1 on the default background and 7.4:1 or more on the `.subtle` card backgrounds (AAA) in light and dark, and 10:1 or more in high contrast. Caution uses `yellow`, not `orange`: Compound's orange 900 and red 900 have the same luminance and the same hue family. See bipe/docs/design/trust-ui.md.
+5. **Android `SemanticColors` in token groups.** The generator puts the semantic colours in one data class for each token group (`SemanticColorsBg`, `SemanticColorsText`, ...). `SemanticColors` holds the groups and `isLight`, and has one delegating property for each colour (`colors.textPrimary` does not change). One class with all 126 colours had a `copy$default` with 259 JVM argument slots (limit 255): JVM unit tests failed with `ClassFormatError` and ART rejected `copy()`. `getSemanticColorGroups` in `src/configs/getAndroidConfig.ts` stops the build when a generated signature needs more than 240 slots. To change one colour: `colors.copy(bg = colors.bg.copy(bgCanvasDefault = ...))`.
 
 ## Single source for colour values
 
@@ -30,7 +31,7 @@ Regenerate the ramp after an upstream update: `git checkout upstream/main -- tok
 ## Consumers
 
 - bipe-ios `compound-ios/Package.swift` points at this repo by local path (`../../bipe-tokens`), because the repo is private until launch.
-- Android: not yet.
+- bipe-android copies `assets/android` with `tools/compound/import_bipe_tokens.sh` (default path `../bipe-tokens`).
 
 ## Traps
 

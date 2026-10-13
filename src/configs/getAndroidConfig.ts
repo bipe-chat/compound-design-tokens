@@ -91,6 +91,94 @@ function fixColorName(colorName: string): string {
   return removePrefixAndCamelCase(colorName, "color");
 }
 
+/**
+ * Bipe: the JVM limits a method signature to 255 argument slots, `this` included.
+ * Compose `Color` is a value class over a 64-bit value, so each `Color` parameter uses 2 slots.
+ * One constructor with all semantic colours (127 colours with the Bipe trust tokens) needs 256 slots,
+ * and the JVM rejects the class with `ClassFormatError: Too many arguments in method signature`.
+ * The generator therefore puts the semantic colours in one holder class for each top-level token group
+ * (`bg`, `border`, `icon`, ...). `SemanticColors` holds the groups and has one delegating property
+ * for each colour, so `ElementTheme.colors.textPrimary` does not change.
+ */
+const JVM_SLOT_LIMIT = 240;
+const COLOR_SLOTS = 2;
+
+export interface SemanticColorGroup {
+  /** Property name on `SemanticColors`, for example `bg`. */
+  name: string;
+  /** Kotlin class name of the holder, for example `SemanticColorsBg`. */
+  className: string;
+  tokens: TransformedToken[];
+}
+
+/**
+ * Returns the largest number of JVM argument slots that one generated method of a Kotlin data class uses.
+ * The largest method is the static `copy$default`: receiver, parameters, one `Int` mask for each 32
+ * parameters, and the marker `Object`.
+ */
+export function dataClassMaxSlots(paramSlots: number[]): number {
+  const params = paramSlots.reduce((sum, slots) => sum + slots, 0);
+  const masks = Math.ceil(paramSlots.length / 32);
+  const constructorSlots = 1 + params;
+  const copyDefault = 1 + params + masks + 1;
+  return Math.max(constructorSlots, copyDefault);
+}
+
+function semanticGroupKey(token: TransformedToken): string {
+  return token.path[0] === "color" ? token.path[1] : token.path[0];
+}
+
+/**
+ * Groups the semantic colour tokens by their first path segment after `color`.
+ * Throws when a generated signature uses more than JVM_SLOT_LIMIT slots, so a token import cannot
+ * bring back the class format error.
+ */
+export function getSemanticColorGroups(
+  tokens: TransformedToken[],
+): SemanticColorGroup[] {
+  const byKey = new Map<string, TransformedToken[]>();
+  for (const token of tokens) {
+    const key = semanticGroupKey(token);
+    if (!/^[a-z][a-zA-Z0-9]*$/.test(key)) {
+      throw new Error(`Android: token group "${key}" is not a Kotlin name`);
+    }
+    byKey.set(key, [...(byKey.get(key) ?? []), token]);
+  }
+  const colorNames = new Set(tokens.map((token) => fixColorName(token.name)));
+  const groups = [...byKey.keys()].sort().map((key) => {
+    if (colorNames.has(key) || key === "isLight") {
+      throw new Error(`Android: token group "${key}" has the name of a colour`);
+    }
+    return {
+      name: key,
+      className: `SemanticColors${upperFirst(key)}`,
+      tokens: [...(byKey.get(key) ?? [])].sort((a, b) => {
+        const nameA = fixColorName(a.name);
+        const nameB = fixColorName(b.name);
+        return nameA < nameB ? -1 : nameA > nameB ? 1 : 0;
+      }),
+    };
+  });
+
+  const signatures: [string, number][] = groups.map((group) => [
+    group.className,
+    dataClassMaxSlots(group.tokens.map(() => COLOR_SLOTS)),
+  ]);
+  // SemanticColors: one reference for each group and the isLight Boolean.
+  signatures.push([
+    "SemanticColors",
+    dataClassMaxSlots([...groups.map(() => 1), 1]),
+  ]);
+  for (const [className, slots] of signatures) {
+    if (slots > JVM_SLOT_LIMIT) {
+      throw new Error(
+        `Android: ${className} needs ${slots} JVM argument slots, the limit for generated code is ${JVM_SLOT_LIMIT} (JVM maximum 255). Split the token group.`,
+      );
+    }
+  }
+  return groups;
+}
+
 function getIconName(iconName: string): string {
   const camelCaseName = removePrefixAndCamelCase(iconName, "icon");
   return camelCaseName.charAt(0).toUpperCase() + camelCaseName.slice(1);
@@ -197,6 +285,7 @@ export function getAndroidConfig(theme: Theme): PlatformConfig {
           themeName: themeName,
           tokenClassName: tokenClassName,
           isLight: className.startsWith("Light"),
+          getSemanticColorGroups,
           className: `${className}ColorTokens`,
           packageName: packageName,
         }),
@@ -211,8 +300,9 @@ export function getAndroidConfig(theme: Theme): PlatformConfig {
           !isCssGradient.filter(token),
         options: withDefaultOptions({
           outputReferences: true,
-          import: [],
+          import: ["androidx.compose.runtime.Immutable"],
           fixColorName,
+          getSemanticColorGroups,
           className: "SemanticColors",
           packageName: packageName,
         }),
