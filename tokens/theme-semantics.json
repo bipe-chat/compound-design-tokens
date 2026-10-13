@@ -123,22 +123,22 @@
         "verified": {
           "value": "{color.acai.1100}",
           "type": "color",
-          "description": "Proseio trust UI. Verified states (seal, verified name). AAA."
+          "description": "Bipe trust UI. Verified states (seal, verified name). AAA."
         },
         "caution": {
           "value": "{color.yellow.1100}",
           "type": "color",
-          "description": "Proseio trust UI. Caution (amber) text. AAA."
+          "description": "Bipe trust UI. Caution (amber) text. AAA."
         },
         "danger": {
           "value": "{color.red.1100}",
           "type": "color",
-          "description": "Proseio trust UI. Confirmed danger text. AAA."
+          "description": "Bipe trust UI. Confirmed danger text. AAA."
         },
         "neutral": {
           "value": "{color.gray.1100}",
           "type": "color",
-          "description": "Proseio trust UI. Information text (unverified, external). AAA."
+          "description": "Bipe trust UI. Information text (unverified, external). AAA."
         }
       }
     },
@@ -369,33 +369,33 @@
           "solid": {
             "value": "{color.acai.1100}",
             "type": "color",
-            "description": "Proseio trust UI. Solid fill: institution seal, institutional header band."
+            "description": "Bipe trust UI. Solid fill: institution seal, institutional header band."
           },
           "subtle": {
             "value": "{color.acai.200}",
             "type": "color",
-            "description": "Proseio trust UI. Subtle background for verified and Proseio cards."
+            "description": "Bipe trust UI. Subtle background for verified and Bipe cards."
           }
         },
         "caution": {
           "subtle": {
             "value": "{color.yellow.200}",
             "type": "color",
-            "description": "Proseio trust UI. Amber card background."
+            "description": "Bipe trust UI. Amber card background."
           }
         },
         "danger": {
           "subtle": {
             "value": "{color.red.200}",
             "type": "color",
-            "description": "Proseio trust UI. Danger card background."
+            "description": "Bipe trust UI. Danger card background."
           }
         },
         "neutral": {
           "subtle": {
             "value": "{color.gray.200}",
             "type": "color",
-            "description": "Proseio trust UI. Information card background."
+            "description": "Bipe trust UI. Information card background."
           }
         }
       }
@@ -485,22 +485,22 @@
         "verified": {
           "value": "{color.acai.1100}",
           "type": "color",
-          "description": "Proseio trust UI. Verified card and Pix request card border."
+          "description": "Bipe trust UI. Verified card and Pix request card border."
         },
         "caution": {
           "value": "{color.yellow.900}",
           "type": "color",
-          "description": "Proseio trust UI. Amber card border."
+          "description": "Bipe trust UI. Amber card border."
         },
         "danger": {
           "value": "{color.red.900}",
           "type": "color",
-          "description": "Proseio trust UI. Danger card border."
+          "description": "Bipe trust UI. Danger card border."
         },
         "neutral": {
           "value": "{color.gray.800}",
           "type": "color",
-          "description": "Proseio trust UI. Information card border."
+          "description": "Bipe trust UI. Information card border."
         }
       }
     },
@@ -601,22 +601,22 @@
         "verified": {
           "value": "{color.acai.1100}",
           "type": "color",
-          "description": "Proseio trust UI. Seal and verified glyphs."
+          "description": "Bipe trust UI. Seal and verified glyphs."
         },
         "caution": {
           "value": "{color.yellow.1100}",
           "type": "color",
-          "description": "Proseio trust UI. Amber glyphs."
+          "description": "Bipe trust UI. Amber glyphs."
         },
         "danger": {
           "value": "{color.red.1100}",
           "type": "color",
-          "description": "Proseio trust UI. Danger glyphs."
+          "description": "Bipe trust UI. Danger glyphs."
         },
         "neutral": {
           "value": "{color.gray.1100}",
           "type": "color",
-          "description": "Proseio trust UI. Information glyphs."
+          "description": "Bipe trust UI. Information glyphs."
         }
       }
     },
