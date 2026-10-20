@@ -1,0 +1,222 @@
+{
+  "color": {
+    "expressive": {
+      "pitanga": {
+        "100": {
+          "value": "#fffbf7",
+          "type": "color",
+          "description": "WCAG: 1.03 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "200": {
+          "value": "#fff7f3",
+          "type": "color",
+          "description": "WCAG: 1.06 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "300": {
+          "value": "#ffefeb",
+          "type": "color",
+          "description": "WCAG: 1.12 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "400": {
+          "value": "#ffdfd8",
+          "type": "color",
+          "description": "WCAG: 1.25 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "500": {
+          "value": "#ffc6b8",
+          "type": "color",
+          "description": "WCAG: 1.50 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "600": {
+          "value": "#feb19f",
+          "type": "color",
+          "description": "WCAG: 1.75 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "700": {
+          "value": "#f6927c",
+          "type": "color",
+          "description": "WCAG: 2.25 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "800": {
+          "value": "#df634a",
+          "type": "color",
+          "description": "WCAG: 3.50 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "900": {
+          "value": "#c13f26",
+          "type": "color",
+          "description": "WCAG: 5.25 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "1000": {
+          "value": "#ae2f16",
+          "type": "color",
+          "description": "WCAG: 6.50 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "1100": {
+          "value": "#9b2208",
+          "type": "color",
+          "description": "WCAG: 8.00 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "1200": {
+          "value": "#7e1500",
+          "type": "color",
+          "description": "WCAG: 10.50 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "1300": {
+          "value": "#5d0e00",
+          "type": "color",
+          "description": "WCAG: 13.75 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        },
+        "1400": {
+          "value": "#3e0b03",
+          "type": "color",
+          "description": "WCAG: 16.75 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
+        }
+      },
+      "jabuticaba": {
+        "100": {
+          "value": "#fffaff",
+          "type": "color",
+          "description": "WCAG: 1.03 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "200": {
+          "value": "#fcf6ff",
+          "type": "color",
+          "description": "WCAG: 1.06 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "300": {
+          "value": "#f5f0fd",
+          "type": "color",
+          "description": "WCAG: 1.12 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "400": {
+          "value": "#eae3f5",
+          "type": "color",
+          "description": "WCAG: 1.25 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "500": {
+          "value": "#dbcdee",
+          "type": "color",
+          "description": "WCAG: 1.50 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "600": {
+          "value": "#cfbce7",
+          "type": "color",
+          "description": "WCAG: 1.75 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "700": {
+          "value": "#bba2da",
+          "type": "color",
+          "description": "WCAG: 2.25 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "800": {
+          "value": "#9b7bbf",
+          "type": "color",
+          "description": "WCAG: 3.50 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "900": {
+          "value": "#7e5da2",
+          "type": "color",
+          "description": "WCAG: 5.25 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "1000": {
+          "value": "#6f5092",
+          "type": "color",
+          "description": "WCAG: 6.50 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "1100": {
+          "value": "#614381",
+          "type": "color",
+          "description": "WCAG: 8.00 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "1200": {
+          "value": "#4d3468",
+          "type": "color",
+          "description": "WCAG: 10.50 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "1300": {
+          "value": "#38244c",
+          "type": "color",
+          "description": "WCAG: 13.75 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        },
+        "1400": {
+          "value": "#241832",
+          "type": "color",
+          "description": "WCAG: 16.75 on the light theme background. OKLCH hue 305. Deep violet, low chroma."
+        }
+      },
+      "jenipapo": {
+        "100": {
+          "value": "#f0feff",
+          "type": "color",
+          "description": "WCAG: 1.03 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "200": {
+          "value": "#edfbff",
+          "type": "color",
+          "description": "WCAG: 1.06 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "300": {
+          "value": "#e6f4fc",
+          "type": "color",
+          "description": "WCAG: 1.12 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "400": {
+          "value": "#d3eaf5",
+          "type": "color",
+          "description": "WCAG: 1.25 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "500": {
+          "value": "#aed9ef",
+          "type": "color",
+          "description": "WCAG: 1.50 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "600": {
+          "value": "#92cce8",
+          "type": "color",
+          "description": "WCAG: 1.75 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "700": {
+          "value": "#67b6db",
+          "type": "color",
+          "description": "WCAG: 2.25 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "800": {
+          "value": "#2093bf",
+          "type": "color",
+          "description": "WCAG: 3.50 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "900": {
+          "value": "#0074a0",
+          "type": "color",
+          "description": "WCAG: 5.25 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "1000": {
+          "value": "#00648e",
+          "type": "color",
+          "description": "WCAG: 6.50 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "1100": {
+          "value": "#00567c",
+          "type": "color",
+          "description": "WCAG: 8.00 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "1200": {
+          "value": "#004463",
+          "type": "color",
+          "description": "WCAG: 10.50 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "1300": {
+          "value": "#003148",
+          "type": "color",
+          "description": "WCAG: 13.75 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        },
+        "1400": {
+          "value": "#002030",
+          "type": "color",
+          "description": "WCAG: 16.75 on the light theme background. OKLCH hue 230. Blue-black of the jenipapo dye. Near Compound cyan (241), which is not a state colour."
+        }
+      }
+    }
+  }
+}
