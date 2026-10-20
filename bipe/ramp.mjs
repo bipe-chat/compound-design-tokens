@@ -20,7 +20,10 @@ export function oklch(L, C, H) {
   ].map((x) => Math.min(1, Math.max(0, toS(x))));
 }
 
-const byte = (x) => Math.round(x * 255).toString(16).padStart(2, "0");
+const byte = (x) =>
+  Math.round(x * 255)
+    .toString(16)
+    .padStart(2, "0");
 export const hex = (c) => `#${c.map(byte).join("")}`;
 
 export const parseHex = (h) =>
@@ -71,9 +74,7 @@ export function ramp(col, dark, H, peak) {
   const bg = parseHex(col.theme.bg.value);
   const out = {};
   for (const [step, tok] of Object.entries(col.green)) {
-    const target = Number.parseFloat(
-      /WCAG: ([\d.]+)/.exec(tok.description)[1],
-    );
+    const target = Number.parseFloat(/WCAG: ([\d.]+)/.exec(tok.description)[1]);
     const c = solve(target, bg, dark, H, peak);
     out[step] = {
       value: hex(c),
