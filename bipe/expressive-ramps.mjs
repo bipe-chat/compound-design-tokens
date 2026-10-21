@@ -15,6 +15,11 @@ const RAMPS = {
     peak: 0.17,
     note: "Coral. Between Compound red (hue 25) and orange (42): background fields only.",
   },
+  caju: {
+    hue: 75,
+    peak: 0.16,
+    note: "Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber).",
+  },
   jabuticaba: { hue: 305, peak: 0.11, note: "Deep violet, low chroma." },
   jenipapo: {
     hue: 230,
