@@ -73,6 +73,78 @@
           "description": "WCAG: 16.75 on the light theme background. OKLCH hue 33. Coral. Between Compound red (hue 25) and orange (42): background fields only."
         }
       },
+      "caju": {
+        "100": {
+          "value": "#fffcf0",
+          "type": "color",
+          "description": "WCAG: 1.03 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "200": {
+          "value": "#fff7ec",
+          "type": "color",
+          "description": "WCAG: 1.06 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "300": {
+          "value": "#faf1e5",
+          "type": "color",
+          "description": "WCAG: 1.12 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "400": {
+          "value": "#f5e3cc",
+          "type": "color",
+          "description": "WCAG: 1.25 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "500": {
+          "value": "#efcea1",
+          "type": "color",
+          "description": "WCAG: 1.50 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "600": {
+          "value": "#e8bd80",
+          "type": "color",
+          "description": "WCAG: 1.75 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "700": {
+          "value": "#dba24d",
+          "type": "color",
+          "description": "WCAG: 2.25 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "800": {
+          "value": "#bf7a00",
+          "type": "color",
+          "description": "WCAG: 3.50 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "900": {
+          "value": "#a15a00",
+          "type": "color",
+          "description": "WCAG: 5.25 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "1000": {
+          "value": "#904c00",
+          "type": "color",
+          "description": "WCAG: 6.50 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "1100": {
+          "value": "#7f4000",
+          "type": "color",
+          "description": "WCAG: 8.00 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "1200": {
+          "value": "#663100",
+          "type": "color",
+          "description": "WCAG: 10.50 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "1300": {
+          "value": "#4a2200",
+          "type": "color",
+          "description": "WCAG: 13.75 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        },
+        "1400": {
+          "value": "#311700",
+          "type": "color",
+          "description": "WCAG: 16.75 on the light theme background. OKLCH hue 75. Warm orange-yellow. Expressive only: never UI, text or caution states (it sits next to caution amber)."
+        }
+      },
       "jabuticaba": {
         "100": {
           "value": "#fffaff",
