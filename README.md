@@ -1,3 +1,5 @@
+> **Frozen.** Bipe no longer works on this fork. [bipe-app](https://github.com/bipe-chat/bipe-app) takes its colours from [bipe-shared](https://github.com/bipe-chat/bipe-shared). This repo stays public under the AGPL because the current store builds use it. We archive it once bipe-app replaces the old apps in the stores.
+
 > **Bipe fork.** This is [Bipe](https://bipe.chat)'s fork of Element's Compound design tokens, a Brazilian messenger built on Matrix. Fork rules: [BIPE.md](BIPE.md). Contributing: [Bipe guide](https://github.com/bipe-chat/.github/blob/main/CONTRIBUTING.md) (DCO sign-off). Security: [SECURITY.md](https://github.com/bipe-chat/.github/blob/main/SECURITY.md). The Bipe name and logo are not covered by the licence: [TRADEMARKS.md](https://github.com/bipe-chat/.github/blob/main/TRADEMARKS.md). Everything below this note is Element's original README.
 
 <p align="center"><img src="https://compound.element.io/logo-readme.png" width="300" alt="" /></p>
